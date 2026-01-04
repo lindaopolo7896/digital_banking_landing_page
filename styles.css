@@ -64,6 +64,24 @@ a {
   transform: scaleX(1);
 }
 
+.nav-item-mobile a {
+  color: hsl(240, 5%, 40%);
+  font-size: 15px;
+}
+
+.nav-icons {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.close-icon {
+  margin-left: -50%;
+  display: none;
+}
+
 .cta {
   padding: 10px 20px;
   border-radius: 30px;
@@ -259,4 +277,168 @@ footer {
 
 .reserved {
   color: hsl(233, 8%, 62%);
+}
+
+.hero-mobile-img2 {
+  position: absolute;
+  top: 5%;
+}
+
+.hero-image-mobile {
+  position: absolute;
+  z-index: 2;
+  width: 60%;
+  right: 50%;
+  left: 25%;
+  top: -10%;
+}
+
+.hero-mobile {
+  display: none;
+}
+
+.nav-list-mobile {
+  position: absolute;
+  top: 8%;
+  background-color: white;
+  border-radius: 15px;
+  left: 30%;
+  right: 40%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  z-index: 4;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 340px;
+  gap: 30px;
+  transform: translateY(-110%);
+}
+
+.nav-list-mobile.open-close {
+  transform: translateY(0%);
+}
+@media (max-width: 1280px) {
+  .hero-image {
+    right: -10%;
+    top: -5%;
+  }
+
+  .hero2-img {
+    top: -15%;
+  }
+
+  .cta-hero {
+    width: 40%;
+  }
+
+  .hero-header {
+    width: 80%;
+  }
+
+  .hero {
+    height: 500px;
+  }
+
+  .hero-line {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-image {
+    right: -10%;
+    top: 0%;
+  }
+
+  .hero2-img {
+    top: -10%;
+  }
+
+  .hero-line {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-nav,
+  .nav-list {
+    display: none;
+  }
+
+  .nav-icons {
+    display: flex;
+  }
+  .cta-hero {
+    width: 50%;
+  }
+
+  .reason-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .reason,
+  .about,
+  .articles,
+  .articles-container,
+  .article,
+  .hero-container,
+  footer,
+  .footer-left,
+  .footer-nav,
+  .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .head-line {
+    text-align: center;
+    width: 58%;
+  }
+
+  .reason-line {
+    text-align: center;
+  }
+
+  .article-img {
+    width: 70%;
+    height: 300px;
+  }
+
+  .hero-img-container {
+    display: none;
+  }
+
+  .hero-container {
+    margin-top: 70%;
+    width: 70%;
+    padding-bottom: 10%;
+  }
+
+  .hero-header,
+  .hero-line {
+    text-align: center;
+  }
+
+  .hero-header {
+    width: 70%;
+  }
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-mobile {
+    display: block;
+  }
+  .social-container,
+  .footer-nav,
+  .footer-right {
+    margin-bottom: 10px;
+  }
 }

@@ -6,3 +6,10 @@ navItems.forEach((item) =>
     item.classList.add("active");
   })
 );
+
+const hamburger = document.querySelector(".nav-icons");
+const menu = document.querySelector(".nav-list-mobile");
+
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("open-close");
+});
